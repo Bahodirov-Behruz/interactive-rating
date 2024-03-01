@@ -1,135 +1,181 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background: black;
-  font-family: Overpass;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  padding: 195px 0;
-}
-
-.container {
-  border-radius: 20px;
-  margin: 0 auto;
-  background: #181e27;
-  max-width: 412px;
-  height: 416px;
-}
-.container .ovall {
-  padding: 32px;
-}
-.container .ovall .oval {
-  border-radius: 50%;
-  background: #262e38;
-  width: 48px;
-  height: 48px;
-}
-.container .ovall .oval img {
-  padding: 16px;
-}
-.container .text h1 {
-  padding: 0 40px 0 30px;
-  color: #ffffff;
-  height: 43px;
-  font-weight: 700;
-  font-size: 28px;
-}
-.container .text p {
-  padding: 0 40px 0 30px;
-  color: #969fad;
-  font-weight: 400;
-  line-height: 24px;
-  font-size: 15px;
-}
-.container .box {
+  font-family: "Overpass", sans-serif;
+  background: #131518;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 22px;
-  padding: 24px 39px 0 32px;
-}
-.container .box .iconca:hover {
-  cursor: pointer;
-}
-.container .box .iconca:hover circle {
-  fill: #fc7614;
-}
-.container .box .iconca:hover path {
-  fill: #ffffff;
-}
-.container .box .iconca_4:hover {
-  cursor: pointer;
-}
-.container .box .iconca_4:hover circle {
-  fill: #7c8798;
-}
-.container .box .iconca_4:hover path {
-  fill: #ffffff;
-}
-.container .btn {
-  padding: 30px;
-}
-.container .btn button {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 19px;
-  letter-spacing: 2px;
-  background: #fc7614;
-  padding: 15px 140px;
-  border-radius: 30px;
-  border: none;
-}
-.container .btn button:hover {
-  cursor: pointer;
-  background: #ffffff;
-  color: #fc7614;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
 
-@media screen and (max-width: 404px) {
+.container {
+  width: 100%;
+  max-width: 412px;
+  min-height: 416px;
+  margin: 0 auto;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  border-radius: 24px;
+}
+.container .star {
+  width: 48px;
+  height: 48px;
+  margin: 32px;
+  background: #262e38;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 32px;
+}
+.container section h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #ffffff;
+  padding-bottom: 7px;
+}
+.container section p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #969fad;
+  line-height: 24px;
+  width: 100%;
+  max-width: 340px;
+  height: 72px;
+  margin-bottom: 24px;
+}
+.container section .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 32px;
+}
+.container section .number div {
+  width: 51px;
+  height: 51px;
+  background: #262e38;
+  color: #7c8798;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.container section .number div:hover {
+  background: #7c8798;
+  color: #ffffff;
+}
+.container section .number div:active {
+  background: #fc7614;
+  color: #ffffff;
+  -webkit-transition: 0.5 s;
+  transition: 0.5 s;
+}
+.container section a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  max-width: 341px;
+  min-height: 45px;
+  background: #fc7614;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container section a:hover {
+  color: #fc7614;
+  background: #ffffff;
+}
+
+@media (max-width: 420px) {
   .container {
     width: 327px;
-    height: 370px;
+    min-height: 360px;
+    margin: 0 auto;
   }
-  .container .ovall {
-    padding: 24px 0 15px 24px;
-  }
-  .container .ovall .oval {
+  .container .star {
     width: 40px;
     height: 40px;
+    margin: 24px;
   }
-  .container .ovall .oval img {
-    padding: 13px;
+  .container section {
+    padding: 24px;
   }
-  .container .text h1 {
+  .container section h1 {
     font-size: 24px;
-    line-height: 30px;
+    padding-bottom: 10px;
   }
-  .container .text p {
+  .container section p {
     font-size: 14px;
-    line-height: 22px;
   }
-  .container .box {
+  .container section .number {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 16px;
-    padding: 15px 24px 0 24px;
+    gap: 17px;
+    padding: 0;
   }
-  .container .btn {
-    padding: 24px;
+  .container section .number div {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 24px;
   }
-  .container .btn button {
+  .container section a {
     font-size: 14px;
-    padding: 12px 106px;
   }
 }

@@ -1,133 +1,147 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background: black;
-  font-family: "Overpass";
-  user-select: none;
-  padding: 195px 0;
+  font-family: "Overpass", sans-serif;
+  background: #131518;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
 .container {
-  border-radius: 20px;
-  margin: 0 auto;
-  background: #181e27;
+  width: 100%;
   max-width: 412px;
-  height: 416px;
-  .ovall {
-    padding: 32px;
-    .oval {
-      border-radius: 50%;
-      background: #262e38;
-      width: 48px;
-      height: 48px;
-      img {
-        padding: 16px;
-      }
-    }
+  min-height: 416px;
+  margin: 0 auto;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 24px;
+  .star {
+    width: 48px;
+    height: 48px;
+    margin: 32px;
+    background: #262e38;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .text {
+  section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+
     h1 {
-      padding: 0 40px 0 30px;
-      color: #ffffff;
-      height: 43px;
-      font-weight: 700;
       font-size: 28px;
+      font-weight: 700;
+      line-height: 35px;
+      color: #ffffff;
+      padding-bottom: 7px;
     }
     p {
-      padding: 0 40px 0 30px;
-      color: #969fad;
+      font-size: 15px;
       font-weight: 400;
+      color: #969fad;
       line-height: 24px;
-      font-size: 15px;
+      width: 100%;
+      max-width: 340px;
+      height: 72px;
+      margin-bottom: 24px;
     }
-  }
-  .box {
-    display: flex;
-    gap: 22px;
-    padding: 24px 39px 0 32px;
-    .iconca {
-      &:hover {
+    .number {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 32px;
+      div {
+        width: 51px;
+        height: 51px;
+        background: #262e38;
+        color: #7c8798;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        margin-bottom: 32px;
         cursor: pointer;
-        circle {
-          fill: #fc7614;
+        &:hover {
+          background: #7c8798;
+          color: #ffffff;
         }
-        path {
-          fill: #ffffff;
+        &:active {
+          background: #fc7614;
+          color: #ffffff;
+          transition: 0.5 s;
         }
       }
     }
-    .iconca_4 {
-      &:hover {
-        cursor: pointer;
-        circle {
-          fill: #7c8798;
-        }
-        path {
-          fill: #ffffff;
-        }
-      }
-    }
-  }
-  .btn {
-    padding: 30px;
-    button {
+    a {
+      text-decoration: none;
       color: #ffffff;
-      font-weight: 700;
+      width: 100%;
+      max-width: 341px;
+      min-height: 45px;
+      background: #fc7614;
       font-size: 15px;
+      font-weight: 700;
       line-height: 19px;
       letter-spacing: 2px;
-      background: #fc7614;
-      padding: 15px 140px;
       border-radius: 30px;
-      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &:hover {
-        cursor: pointer;
-        background: #ffffff;
         color: #fc7614;
+        background: #ffffff;
       }
     }
   }
 }
-@media screen and (max-width: 404px) {
+@media (max-width: 420px) {
   .container {
+    
+
     width: 327px;
-    height: 370px;
-    padding: 15px;
-    .ovall {
-      padding: 24px 0 15px 24px;
-      .oval {
-        width: 40px;
-        height: 40px;
-        img {
-          padding: 13px;
-        }
-      }
+    min-height: 360px;
+    margin: 0 auto;
+    .star {
+      width: 40px;
+      height: 40px;
+      margin: 24px;
     }
-    .text {
+    section {
+      padding: 24px;
       h1 {
         font-size: 24px;
-        line-height: 30px;
+        padding-bottom: 10px;
       }
       p {
         font-size: 14px;
-        line-height: 22px;
       }
-    }
-    .box {
-      display: flex;
-      gap: 16px;
-      padding: 15px 24px 0 24px;
-    }
-    .btn {
-      padding: 24px;
-      button {
+      .number {
+        display: flex;
+        gap: 17px;
+        padding: 0;
+        div {
+          width: 42px;
+          height: 42px;
+          margin-bottom: 24px;
+        }
+      }
+      a {
         font-size: 14px;
-        padding: 12px 106px;
       }
     }
   }
