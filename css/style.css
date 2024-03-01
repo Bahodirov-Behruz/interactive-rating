@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  font-family: Overpass;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 195px 0;
+}
+
+.container {
+  border-radius: 20px;
+  margin: 0 auto;
+  background: #181e27;
+  max-width: 412px;
+  height: 416px;
+}
+.container .ovall {
+  padding: 32px;
+}
+.container .ovall .oval {
+  border-radius: 50%;
+  background: #262e38;
+  width: 48px;
+  height: 48px;
+}
+.container .ovall .oval img {
+  padding: 16px;
+}
+.container .text h1 {
+  padding: 0 40px 0 30px;
+  color: #ffffff;
+  height: 43px;
+  font-weight: 700;
+  font-size: 28px;
+}
+.container .text p {
+  padding: 0 40px 0 30px;
+  color: #969fad;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 15px;
+}
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22px;
+  padding: 24px 39px 0 32px;
+}
+.container .box .iconca:hover {
+  cursor: pointer;
+}
+.container .box .iconca:hover circle {
+  fill: #fc7614;
+}
+.container .box .iconca:hover path {
+  fill: #ffffff;
+}
+.container .box .iconca_4:hover {
+  cursor: pointer;
+}
+.container .box .iconca_4:hover circle {
+  fill: #7c8798;
+}
+.container .box .iconca_4:hover path {
+  fill: #ffffff;
+}
+.container .btn {
+  padding: 30px;
+}
+.container .btn button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  background: #fc7614;
+  padding: 15px 140px;
+  border-radius: 30px;
+  border: none;
+}
+.container .btn button:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #fc7614;
+}
+
+@media screen and (max-width: 404px) {
+  .container {
+    width: 327px;
+    height: 370px;
+  }
+  .container .ovall {
+    padding: 24px 0 15px 24px;
+  }
+  .container .ovall .oval {
+    width: 40px;
+    height: 40px;
+  }
+  .container .ovall .oval img {
+    padding: 13px;
+  }
+  .container .text h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container .text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .container .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    padding: 15px 24px 0 24px;
+  }
+  .container .btn {
+    padding: 24px;
+  }
+  .container .btn button {
+    font-size: 14px;
+    padding: 12px 106px;
+  }
+}
